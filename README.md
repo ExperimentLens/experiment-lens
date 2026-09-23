@@ -5,7 +5,7 @@
 ## About ExperimentLens
 **ExperimentLens** is a lightweight yet powerful visual dashboard for the interactive exploration, monitoring, and explainability of complex AI pipelines.
 
-Developed within the context of the [ExtremeXP project](https://extremexp.eu/), ExperimentLens empowers researchers, data scientists, and engineers to make sense of experimental results across multiple runs and interconnected tasks.
+ExperimentLens empowers researchers, data scientists, and engineers to make sense of experimental results across multiple runs and interconnected tasks.
 
 The tool is centered on **human-in-the-loop experimentation**, enabling users to monitor pipeline lifecycles, inspect results, and gain insights into pipeline behavior and configuration sensitivity.
 
@@ -46,9 +46,9 @@ The tool is centered on **human-in-the-loop experimentation**, enabling users to
 
 | **Component** | **Description** |
 |----------------|----------------|
-| [Visualization UI](https://github.com/extremexp-HORIZON/vis-frontend) | Interactive dashboard for exploring experiments, monitoring executions, and visualizing explainability results. |
-| [Visualization Middleware (Backend)](https://github.com/extremexp-HORIZON/vis-api) | REST-based middleware connecting the UI to experiment tracking tools and orchestration frameworks. |
-| [Explainability Module](https://github.com/extremexp-HORIZON/extremexp-explainability-module) | Provides local and global explainability methods (e.g., counterfactuals, PDP, ALE) and integrates results into the UI through the middleware. |
+| [Visualization UI](https://github.com/ExperimentLens/vis-frontend) | Interactive dashboard for exploring experiments, monitoring executions, and visualizing explainability results. |
+| [Visualization Middleware (Backend)](https://github.com/ExperimentLens/vis-api) | REST-based middleware connecting the UI to experiment tracking tools and orchestration frameworks. |
+| [Explainability Module](https://github.com/ExperimentLens/explainability-module) | Provides local and global explainability methods (e.g., counterfactuals, PDP, ALE) and integrates results into the UI through the middleware. |
 
 Each component repository includes its own setup and development instructions.
 
@@ -58,11 +58,11 @@ Each component repository includes its own setup and development instructions.
 
 - **Experiment Tracking**
   - Connects to tools such as **MLflow** for logging metrics, parameters, and artifacts.
-  - Currently supports **MLflow** and the **ExtremeXP Experimentation Engine**.
+  - Currently supports **MLflow**.
 
 - **Workflow Orchestration**
   - Interfaces with workflow engines to monitor and control pipeline lifecycles, trace task execution, and adjust parameters dynamically.
-  - Currently supports the **ExtremeXP Execution Engine**, with planned support for **Kubeflow**, **Airflow**, and other orchestration platforms.
+  - Currently supports the **Kubeflow**, with planned support for **Airflow**, and other orchestration platforms.
 
 ## Setup Instructions
 
@@ -85,7 +85,7 @@ ExperimentLens depends on three external repositories:
 
 - `vis-frontend`
 - `vis-api`
-- `extremexp-explainability-module`
+- `explainability-module`
 
 To fetch them automatically:
 
